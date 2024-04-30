@@ -58,8 +58,7 @@ header figure {
 header nav {
   flex: 5;
   font-family: "Anton", sans-serif;
-  /** 24px */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 header nav ul {
@@ -100,41 +99,49 @@ main figure img {
 }
 
 main section {
-  margin: 40px auto 30px;
+  margin: 40px auto 10px;
   max-width: 70vw;
 }
 
 main section h2 {
   color: #d7df17;
-  /** 48px */
   font-size: 2.5rem;
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   text-align: center;
-}
-
-#participantes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  margin: auto auto 30px;
 }
 
 #participantes h2 {
-  grid-column: 1 / span 2;
+  text-align: center;
+  width: 100%;
 }
 
-#participantes article {
+#participantes div {
   display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  gap: 10px;
+}
+
+#participantes div article {
+  grid-column: auto;
+  grid-row: auto;
+
   border-width: 5px;
   border-color: #7118d7;
   border-style: solid;
   border-radius: 8px;
+  margin: 6px;
+
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 1fr auto;
 }
 
 /** necesario ya que los estilos del elemento header son definidos mas arriba, sin esta modificacion, este header usaria las mismas propiedades que el header base */
-#participantes article header {
+#participantes div article header {
   grid-column: 1;
 
   margin: 0 auto;
@@ -146,31 +153,31 @@ main section h2 {
   padding: 12px;
 }
 
-#participantes article header h3 {
+#participantes div article header h3 {
   font-size: 2rem;
 }
 
-#participantes article header p {
-  padding-right: 20px;
+#participantes div article header p {
+  padding-right: 64px;
 }
 
-#participantes article figure {
+#participantes div article figure {
   grid-column: 2;
+  align-self: center;
+  justify-self: center;
   padding: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1/1;
+  padding-right: 64px;
 }
 
-#participantes article figure img {
+#participantes div article figure img {
   object-fit: cover;
+  object-position: center;
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  height: 128px;
+  width: 128px;
 }
 
-#participantes article footer {
+#participantes div article footer {
   width: 100%;
   grid-column: 1 / span 2;
   display: flex;
@@ -179,11 +186,17 @@ main section h2 {
   padding: 12px 0px 12px 0px;
 }
 
-#participantes article footer a {
+#participantes div article footer a {
   color: white;
   border: 3px solid #9264cc;
+  border-radius: 6px;
   padding: 8px 12px 8px 12px;
   border-style: solid;
+}
+
+#participantes div article footer a:hover {
+  border: 3px solid #9264cc;
+  color: #9264cc;
 }
 
 #galeria {
@@ -192,13 +205,54 @@ main section h2 {
 }
 
 #galeria article {
+  margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 
-#galeria article:nth-child(1) {
+#galeria article> :nth-child(1) {
   grid-column: 1 / span 2;
+  grid-row: 1;
+
 }
+
+#galeria article> :nth-child(2) {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+#galeria article> :nth-child(3) {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+#galeria article> :nth-child(4) {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+
+#galeria article> :nth-child(5) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#galeria article> :nth-child(6) {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
+
+#galeria article> :nth-child(7) {
+  grid-column: 4;
+  grid-row: 2 / span 2;
+}
+
+#galeria article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 /* END MAIN */
