@@ -110,6 +110,11 @@ main section {
   max-width: 70vw;
 }
 
+main section header h3 {
+  font-size: 2rem;
+  padding-bottom: 4px;
+}
+
 main section header h2 {
   color: #d7df17;
   font-size: 2.5rem;
@@ -140,6 +145,12 @@ main section header h2 {
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: auto 1fr auto;
+  background-color: black;
+}
+
+#participantes div article:hover {
+  transform: scale(1.025, 1.025);
+  transition-duration: 500ms;
 }
 
 /** necesario ya que los estilos del elemento header son definidos mas arriba, sin esta modificacion, este header usaria las mismas propiedades que el header base */
@@ -155,10 +166,11 @@ main section header h2 {
   padding: 12px;
 }
 
+/* 
 #participantes div article header h3 {
   font-size: 2rem;
   padding-bottom: 4px;
-}
+} */
 
 #participantes div article header p {
   padding-right: 42px;
@@ -317,9 +329,109 @@ main section header h2 {
   transition-duration: 500ms;
 }
 
+#eventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#eventos header {
+  width: 100%;
+}
+
+#eventos article {
+  display: grid;
+  grid-template-columns: 0.9fr 2.1fr;
+  grid-template-rows: 1fr;
+  width: fit-content;
+  border: 4px solid #9264cc;
+  border-radius: 4px;
+  max-width: 600px;
+  background-color: black;
+}
+
+#eventos article:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 500ms;
+}
+
+#eventos article aside {
+  height: 100%;
+  grid-column: 1;
+}
+
+#eventos article aside figure {
+  position: relative;
+  height: 100%;
+}
+
+#eventos article aside figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#eventos article summary {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 32px;
+  padding: 10px;
+  max-width: 250px;
+  justify-content: space-between;
+}
+
+#eventos article summary header {
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+#eventos article summary header h3 {
+  color: #ffcd00;
+  font-family: "Anton", sans-serif;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+#eventos article summary ul {
+  margin-bottom: 8px;
+  padding-right: 1px;
+}
+
+#eventos article summary ul li {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+#eventos article summary a {
+  width: fit-content;
+  align-self: flex-start;
+  padding: 5px;
+
+  background-color: #7118d7;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-size: 1.125rem;
+  border-color: #7118d7;
+  border-radius: 2px;
+
+  cursor: pointer;
+}
+
+#eventos article summary a:hover {
+  background-color: #9264cc;
+}
+
 /* START COMENTAR */
 
 #comentar {
+  padding-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -330,6 +442,7 @@ main section header h2 {
   border-collapse: collapse;
   width: 100%;
   padding: 10px;
+  background-color: black;
 }
 
 #comentar table td,
@@ -342,7 +455,7 @@ main section header h2 {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #9264cc;
+  background-color: #7118d7;
   color: white;
   font-family: "Anton", sans-serif;
   font-size: 1.125rem;
@@ -466,6 +579,11 @@ footer {
 
 footer figure {
   padding: 10px
+}
+
+footer figure:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 500ms;
 }
 
 /** END FOOTER */
