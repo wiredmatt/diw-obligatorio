@@ -343,13 +343,16 @@ main section header h2 {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 0.9fr 2.1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 0.1fr 0.9fr;
+  grid-template-rows: 0.1fr 0.8fr 0.1fr;
   width: fit-content;
   border: 4px solid #9264cc;
   border-radius: 4px;
-  max-width: 600px;
   background-color: black;
+
+  text-align: left;
+  margin-left: 32px;
+  padding: 10px;
 }
 
 #eventos article:hover {
@@ -360,6 +363,7 @@ main section header h2 {
 #eventos article aside {
   height: 100%;
   grid-column: 1;
+  grid-row: 1 / span 3;
 }
 
 #eventos article aside figure {
@@ -376,40 +380,30 @@ main section header h2 {
   object-fit: cover;
 }
 
-#eventos article summary {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 32px;
-  padding: 10px;
-  max-width: 250px;
-  justify-content: space-between;
-}
-
-#eventos article summary header {
+#eventos article header {
   width: 100%;
   margin-bottom: 8px;
   margin-top: 8px;
 }
 
-#eventos article summary header h3 {
+#eventos article header h3 {
   color: #ffcd00;
   font-family: "Anton", sans-serif;
   font-size: 1.75rem;
   text-transform: uppercase;
 }
 
-#eventos article summary ul {
+#eventos article ul {
   margin-bottom: 8px;
   padding-right: 1px;
 }
 
-#eventos article summary ul li {
+#eventos article ul li {
   padding-bottom: 4px;
   padding-top: 4px;
 }
 
-#eventos article summary a {
+#eventos article a {
   width: fit-content;
   align-self: flex-start;
   padding: 5px;
@@ -426,7 +420,7 @@ main section header h2 {
   cursor: pointer;
 }
 
-#eventos article summary a:hover {
+#eventos article a:hover {
   background-color: #9264cc;
 }
 
