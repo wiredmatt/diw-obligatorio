@@ -2,6 +2,24 @@
   COLORES CSS EXTRAIDOS DE https://assets-global.website-files.com/61648208fbba11601a19f03a/css/lollapaloozaar.webflow.cbd58227a.min.css
 */
 
+/* :root {
+  --dark-violet: #7118d7;
+  --black: black;
+  --white: white;
+  --gold: #ffcd00;
+  --tomato: #ff4439;
+  --medium-purple: #9264cc;
+  --sweet-pepper-yellow: #d7df17;
+  --wildflower-pink: #dbafe0;
+  --cream: #fff9ef;
+  --lake-teal: #32c3e2;
+  --lolla-red: #fb4a40;
+  --light-sea-green: #01af9a;
+  --recycle: #76c68b;
+  --reflect-blue: #08a18c;
+  --d59fd5: var(--wildflower-pink);
+} */
+
 
 /* START BASE */
 html {
@@ -16,6 +34,7 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -298,12 +317,55 @@ main section h2 {
 }
 
 /* START COMENTAR */
+
+#comentar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#comentar article table {
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 10px;
+}
+
+#comentar table td,
+#comentar table th {
+  border: 1px solid #ddd;
+  padding: 35px;
+}
+
+#comentar table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #9264cc;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#comentar article header {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#comentar article ul {
+  padding: 28px;
+}
+
+/* START FORM */
 #comentar article form {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
   /* border: 10px solid red; */
 }
 
@@ -323,45 +385,61 @@ main section h2 {
   justify-content: center;
 }
 
-label {
+#comentar article form fieldset label {
   display: block;
 }
 
-input[type="radio"] {
-  width: 15px;
-  height: 15px;
+#comentar article form fieldset input[type="radio"] {
+  margin-top: 10px;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
 }
 
-input,
+#comentar article form input,
 select {
   width: 100%;
   margin-bottom: 10px;
+  height: 35px;
+  border-radius: 4px;
+  padding-left: 10px;
 }
 
-label[for="si"],
-label[for="no"] {
+#comentar article form fieldset label[for="si"],
+#comentar article form fieldset label[for="no"] {
   display: inline-block;
 }
 
-input[type="submit"] {
+#comentar article form input[type="submit"] {
   width: 100%;
   height: 40px;
-  background-color: black;
+  background-color: #7118d7;
   color: white;
-  font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-size: 1.125rem;
+  border-color: #7118d7;
 
   cursor: pointer;
 }
 
-textarea {
+#comentar article form input[type="submit"]:hover {
+  background-color: #9264cc;
+}
+
+#comentar article form fieldset textarea {
   resize: none;
   border: none;
   overflow: auto;
   outline: none;
   box-shadow: none;
   width: 100%;
+  border-radius: 4px;
+  padding: 10px;
 }
+
+/* END FORM */
 
 
 /* END COMENTAR */

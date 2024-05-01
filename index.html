@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 
@@ -159,29 +159,65 @@
         </article>
       </section>
       <section id="comentar">
-        <h2>Comentar</h2>
         <article>
+          <table>
+            <thead>
+              <th>Localidad</th>
+              <th>Horario</th>
+              <th>Direccion</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hipodromo San Isidro</td>
+                <td>Viernes 15 - 20:00</td>
+                <td>Av. Bernabé Márquez 700</td>
+              </tr>
+              <tr>
+                <td>Hipodromo San Isidro</td>
+                <td>Sábado 16 - 20:00</td>
+                <td>Av. Bernabé Márquez 700</td>
+              </tr>
+              <tr>
+                <td>Hipodromo San Isidro</td>
+                <td>Domingo 17 - 20:00</td>
+                <td>Av. Bernabé Márquez 700</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul>
+            <li>Vestimenta libre</li>
+            <li>Se permite acampar durante la noche</li>
+            <li>No se permite el ingreso de menores</li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h2>Comentar</h2>
+          </header>
           <form>
             <fieldset>
               <label for="nombre">Nombre *</label>
               <input
-                name="nombre"
+                id="nombre"
                 required
                 type="text"
                 placeholder="Ingrese nombre"
+                autocomplete="name"
               />
               <label for="email">Email *</label>
               <input
-                name="email"
+                id="email"
                 required
                 type="email"
                 placeholder="Ingrese email"
+                autocomplete="email"
               />
             </fieldset>
 
             <fieldset>
               <label for="localidad">Localidad *</label>
-              <select name="localidad" required>
+              <select id="localidad" required>
                 <option value="">Selecciona una opción</option>
                 <optgroup label="Buenos Aires">
                   <option value="buenos-aires">Buenos Aires</option>
@@ -197,16 +233,16 @@
                 </optgroup>
               </select>
 
-              <label for="soyVip">Soy socio VIP</label>
-              <input type="radio" name="soyVip" value="si" />
+              <label>Soy socio VIP</label>
+              <input type="radio" id="si" name="soyVip" value="si" />
               <label for="si">Si</label>
-              <input type="radio" name="soyVip" value="no" checked />
+              <input type="radio" id="no" name="soyVip" value="no" checked />
               <label for="no">No</label>
             </fieldset>
 
             <fieldset>
               <label for="comentario"></label>
-              <textarea name="comentario" rows="3"></textarea>
+              <textarea required id="comentario" rows="3"></textarea>
             </fieldset>
 
             <input type="submit" value="Enviar" />
