@@ -300,3 +300,18 @@ main section h2 {
 
 
 /* END MAIN */
+
+/** START FOOTER */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer figure {
+  padding: 10px
+}
+
+/** END FOOTER */
