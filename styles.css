@@ -297,6 +297,74 @@ main section h2 {
   transition-duration: 500ms;
 }
 
+/* START COMENTAR */
+#comentar article form {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  /* border: 10px solid red; */
+}
+
+#comentar article form fieldset {
+  width: 45%;
+  box-sizing: border-box;
+  text-align: left;
+  border: none;
+  padding: 10px 0px 10px 0px;
+  /* border: 10px solid blue; */
+}
+
+#comentar article form> :nth-child(3) {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  display: block;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label[for="si"],
+label[for="no"] {
+  display: inline-block;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+}
+
+
+/* END COMENTAR */
 
 
 /* END MAIN */
