@@ -1,23 +1,6 @@
 /**
-  VARIABLES CSS EXTRAIDAS DE https://assets-global.website-files.com/61648208fbba11601a19f03a/css/lollapaloozaar.webflow.cbd58227a.min.css
+  COLORES CSS EXTRAIDOS DE https://assets-global.website-files.com/61648208fbba11601a19f03a/css/lollapaloozaar.webflow.cbd58227a.min.css
 */
-/* :root {
-  --dark-violet: #7118d7;
-  --black: black;
-  --white: white;
-  --gold: #ffcd00;
-  --tomato: #ff4439;
-  --medium-purple: #9264cc;
-  --sweet-pepper-yellow: #d7df17;
-  --wildflower-pink: #dbafe0;
-  --cream: #fff9ef;
-  --lake-teal: #32c3e2;
-  --lolla-red: #fb4a40;
-  --light-sea-green: #01af9a;
-  --recycle: #76c68b;
-  --reflect-blue: #08a18c;
-  --d59fd5: var(--wildflower-pink);
-} */
 
 
 /* START BASE */
@@ -122,21 +105,20 @@ main section h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   width: 100%;
-  gap: 10px;
+  gap: 16px;
 }
 
 #participantes div article {
+  min-width: 100px;
   grid-column: auto;
   grid-row: auto;
 
   border-width: 5px;
-  border-color: #7118d7;
   border-style: solid;
   border-radius: 8px;
-  margin: 6px;
 
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 70% 30%;
   grid-template-rows: auto 1fr auto;
 }
 
@@ -155,10 +137,11 @@ main section h2 {
 
 #participantes div article header h3 {
   font-size: 2rem;
+  padding-bottom: 4px;
 }
 
 #participantes div article header p {
-  padding-right: 64px;
+  padding-right: 42px;
 }
 
 #participantes div article figure {
@@ -166,15 +149,18 @@ main section h2 {
   align-self: center;
   justify-self: center;
   padding: 14px;
-  padding-right: 64px;
+  padding-right: 54px;
 }
 
 #participantes div article figure img {
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
-  height: 128px;
-  width: 128px;
+
+  height: 100%;
+  width: 100%;
+
+  min-width: 96px;
 }
 
 #participantes div article footer {
@@ -182,40 +168,91 @@ main section h2 {
   grid-column: 1 / span 2;
   display: flex;
   justify-content: center;
-  border-top: 5px solid #7118d7;
+  border-top: 5px solid;
   padding: 12px 0px 12px 0px;
 }
 
 #participantes div article footer a {
   color: white;
-  border: 3px solid #9264cc;
+  border: 3px solid;
   border-radius: 6px;
   padding: 8px 12px 8px 12px;
   border-style: solid;
 }
 
 #participantes div article footer a:hover {
-  border: 3px solid #9264cc;
-  color: #9264cc;
+  border: 3px solid;
 }
+
+/** START CUSTOM CARDS */
+
+#participantes div>:nth-child(1) {
+  border-color: #dbafe0;
+}
+
+#participantes div>:nth-child(1) footer {
+  border-color: #dbafe0;
+}
+
+#participantes div>:nth-child(1) footer a {
+  border-color: #dbafe0;
+}
+
+#participantes div>:nth-child(2) {
+  border-color: #fb4a40;
+}
+
+#participantes div>:nth-child(2) footer {
+  border-color: #fb4a40;
+}
+
+#participantes div>:nth-child(2) footer a {
+  border-color: #fb4a40;
+}
+
+#participantes div>:nth-child(3) {
+  border-color: #01af9a;
+}
+
+#participantes div>:nth-child(3) footer {
+  border-color: #01af9a;
+}
+
+#participantes div>:nth-child(3) footer a {
+  border-color: #01af9a;
+}
+
+#participantes div>:nth-child(4) {
+  border-color: #ffcd00;
+}
+
+#participantes div>:nth-child(4) footer {
+  border-color: #ffcd00;
+}
+
+#participantes div>:nth-child(4) footer a {
+  border-color: #ffcd00;
+}
+
+/** END CUSTOM CARDS */
+
 
 #galeria {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 #galeria article {
-  margin: 0 auto;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 
+
 #galeria article> :nth-child(1) {
   grid-column: 1 / span 2;
   grid-row: 1;
-
 }
 
 #galeria article> :nth-child(2) {
@@ -252,7 +289,14 @@ main section h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
+
+#galeria article figure img:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 500ms;
+}
+
 
 
 /* END MAIN */
