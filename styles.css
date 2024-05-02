@@ -84,6 +84,13 @@ main figure img {
 main section {
   margin: 40px auto 10px;
   max-width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main section header {
+  width: 100%;
 }
 
 main section header h3 {
@@ -99,17 +106,6 @@ main section header h2 {
   text-align: center;
   margin: auto auto 30px;
   letter-spacing: 0.08ch;
-}
-
-#participantes {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-#participantes header {
-  width: 100%;
 }
 
 #participantes article {
@@ -248,11 +244,8 @@ main section header h2 {
 
 /** END CUSTOM CARDS */
 
-
+/** START GALERIA */
 #galeria {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   padding: 12px;
 }
 
@@ -310,6 +303,9 @@ main section header h2 {
   transition-duration: 500ms;
 }
 
+/** END GALERIA */
+
+/** START EVENTOS */
 #eventos {
   display: flex;
   flex-direction: row;
@@ -415,6 +411,8 @@ main section header h2 {
 #eventos article a:hover {
   background-color: #9264cc;
 }
+
+/** END EVENTOS */
 
 /* START COMENTAR */
 
