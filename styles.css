@@ -1,26 +1,3 @@
-/**
-  COLORES CSS EXTRAIDOS DE https://assets-global.website-files.com/61648208fbba11601a19f03a/css/lollapaloozaar.webflow.cbd58227a.min.css
-*/
-
-/* :root {
-  --dark-violet: #7118d7;
-  --black: black;
-  --white: white;
-  --gold: #ffcd00;
-  --tomato: #ff4439;
-  --medium-purple: #9264cc;
-  --sweet-pepper-yellow: #d7df17;
-  --wildflower-pink: #dbafe0;
-  --cream: #fff9ef;
-  --lake-teal: #32c3e2;
-  --lolla-red: #fb4a40;
-  --light-sea-green: #01af9a;
-  --recycle: #76c68b;
-  --reflect-blue: #08a18c;
-  --d59fd5: var(--wildflower-pink);
-} */
-
-
 /* START BASE */
 html {
   scroll-behavior: smooth;
@@ -442,16 +419,18 @@ main section header h2 {
 /* START COMENTAR */
 
 #comentar {
-  padding-top: 60px;
+  margin: 0 auto;
+  margin-top: 64px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 #comentar article table {
   text-align: left;
   border-collapse: collapse;
-  width: 100%;
+  max-width: 600px;
   padding: 10px;
   background-color: black;
 }
@@ -475,9 +454,15 @@ main section header h2 {
 }
 
 #comentar article header {
+  width: 100%;
   padding-top: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px 0px;
+  display: flex;
+}
+
+#comentar article header h3 {
+  width: 100%;
+  text-align: center;
 }
 
 #comentar article ul {
@@ -490,8 +475,7 @@ main section header h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  float: right;
-  width: 90%;
+  width: fit-content;
 }
 
 #comentar article form fieldset {
