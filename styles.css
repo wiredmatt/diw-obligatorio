@@ -24,7 +24,6 @@
 /* START BASE */
 html {
   scroll-behavior: smooth;
-  scrollbar-width: none;
   background-color: black;
   color: white;
   font-family: sans-serif;
@@ -126,7 +125,6 @@ main section header h2 {
 }
 
 #participantes {
-  /* border: 2px solid white; */
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -168,9 +166,14 @@ main section header h2 {
   padding-top: 4px;
 }
 
+#participantes article header {
+  padding-top: 8px;
+}
+
 #participantes article footer {
   grid-column: 1 / span 2;
   padding: 12px;
+  margin-top: 10px;
 }
 
 #participantes article p {
@@ -273,6 +276,7 @@ main section header h2 {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 12px;
 }
 
 #galeria article {
@@ -331,6 +335,7 @@ main section header h2 {
 
 #eventos {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -340,19 +345,16 @@ main section header h2 {
 }
 
 #eventos article {
-  margin: 0 auto;
+  margin: 10px auto;
 
   display: grid;
-  grid-template-columns: 0.1fr 0.9fr;
+  grid-template-columns: 0.25fr 0.75fr;
   grid-template-rows: 0.1fr 0.8fr 0.1fr;
-  width: fit-content;
+  max-width: 400px;
   border: 4px solid #9264cc;
   border-radius: 4px;
   background-color: black;
-
   text-align: left;
-  margin-left: 32px;
-  padding: 10px;
 }
 
 #eventos article:hover {
@@ -363,7 +365,7 @@ main section header h2 {
 #eventos article aside {
   height: 100%;
   grid-column: 1;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 4;
 }
 
 #eventos article aside figure {
@@ -384,6 +386,7 @@ main section header h2 {
   width: 100%;
   margin-bottom: 8px;
   margin-top: 8px;
+  margin-left: 30px;
 }
 
 #eventos article header h3 {
@@ -396,6 +399,7 @@ main section header h2 {
 #eventos article ul {
   margin-bottom: 8px;
   padding-right: 1px;
+  margin-left: 30px;
 }
 
 #eventos article ul li {
@@ -403,10 +407,21 @@ main section header h2 {
   padding-top: 4px;
 }
 
-#eventos article a {
+#eventos article footer {
+  grid-row: 3;
+
+  padding: 10px;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+#eventos article footer a {
   width: fit-content;
   align-self: flex-start;
   padding: 5px;
+  margin-left: 20px;
 
   background-color: #7118d7;
   color: white;
@@ -477,7 +492,6 @@ main section header h2 {
   justify-content: space-between;
   float: right;
   width: 90%;
-  /* border: 10px solid red; */
 }
 
 #comentar article form fieldset {
@@ -486,7 +500,6 @@ main section header h2 {
   text-align: left;
   border: none;
   padding: 10px 0px 10px 0px;
-  /* border: 10px solid blue; */
 }
 
 #comentar article form fieldset label {
