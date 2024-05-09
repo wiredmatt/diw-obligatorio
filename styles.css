@@ -70,7 +70,7 @@ main {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 
-  background-image: url('./img/background.png');
+  background-image: url("./img/background.png");
   background-size: contain;
   background-position: right;
   background-position-y: bottom;
@@ -83,7 +83,7 @@ main figure img {
 }
 
 main section {
-  margin: 40px auto 10px;
+  margin: 0 auto;
   max-width: 70vw;
   display: flex;
   flex-wrap: wrap;
@@ -94,11 +94,6 @@ main section header {
   width: 100%;
 }
 
-main section header h3 {
-  font-size: 2rem;
-  padding-bottom: 4px;
-}
-
 main section header h2 {
   color: #d7df17;
   font-size: 2.5rem;
@@ -107,6 +102,15 @@ main section header h2 {
   text-align: center;
   margin: auto auto 30px;
   letter-spacing: 0.08ch;
+}
+
+main section header h3 {
+  font-size: 2rem;
+  padding-bottom: 4px;
+}
+
+#participantes {
+  margin: 0 auto;
 }
 
 #participantes article {
@@ -166,7 +170,6 @@ main section header h2 {
   align-items: center;
 }
 
-
 #participantes article aside figure img {
   object-fit: cover;
   object-position: center;
@@ -193,54 +196,53 @@ main section header h2 {
   padding: 8px 12px 8px 12px;
 }
 
-
 /** START CUSTOM CARDS */
 
-#participantes> :nth-child(2) {
+#participantes > :nth-child(2) {
   border-color: #dbafe0;
 }
 
-#participantes> :nth-child(2) footer {
+#participantes > :nth-child(2) footer {
   border-color: #dbafe0;
 }
 
-#participantes> :nth-child(2) footer a {
+#participantes > :nth-child(2) footer a {
   border-color: #dbafe0;
 }
 
-#participantes> :nth-child(3) {
+#participantes > :nth-child(3) {
   border-color: #fb4a40;
 }
 
-#participantes> :nth-child(3) footer {
+#participantes > :nth-child(3) footer {
   border-color: #fb4a40;
 }
 
-#participantes> :nth-child(3) footer a {
+#participantes > :nth-child(3) footer a {
   border-color: #fb4a40;
 }
 
-#participantes> :nth-child(4) {
+#participantes > :nth-child(4) {
   border-color: #01af9a;
 }
 
-#participantes> :nth-child(4) footer {
+#participantes > :nth-child(4) footer {
   border-color: #01af9a;
 }
 
-#participantes> :nth-child(4) footer a {
+#participantes > :nth-child(4) footer a {
   border-color: #01af9a;
 }
 
-#participantes> :nth-child(5) {
+#participantes > :nth-child(5) {
   border-color: #ffcd00;
 }
 
-#participantes> :nth-child(5) footer {
+#participantes > :nth-child(5) footer {
   border-color: #ffcd00;
 }
 
-#participantes> :nth-child(5) footer a {
+#participantes > :nth-child(5) footer a {
   border-color: #ffcd00;
 }
 
@@ -257,38 +259,37 @@ main section header h2 {
   grid-template-rows: repeat(3, 1fr);
 }
 
-
-#galeria article> :nth-child(1) {
+#galeria article > :nth-child(1) {
   grid-column: 1 / span 2;
   grid-row: 1;
 }
 
-#galeria article> :nth-child(2) {
+#galeria article > :nth-child(2) {
   grid-column: 3;
   grid-row: 1 / span 2;
 }
 
-#galeria article> :nth-child(3) {
+#galeria article > :nth-child(3) {
   grid-column: 4;
   grid-row: 1;
 }
 
-#galeria article> :nth-child(4) {
+#galeria article > :nth-child(4) {
   grid-column: 1;
   grid-row: 2 / span 2;
 }
 
-#galeria article> :nth-child(5) {
+#galeria article > :nth-child(5) {
   grid-column: 2;
   grid-row: 2;
 }
 
-#galeria article> :nth-child(6) {
+#galeria article > :nth-child(6) {
   grid-column: 2 / span 2;
   grid-row: 3;
 }
 
-#galeria article> :nth-child(7) {
+#galeria article > :nth-child(7) {
   grid-column: 4;
   grid-row: 2 / span 2;
 }
@@ -309,6 +310,7 @@ main section header h2 {
 
 /** START EVENTOS */
 #eventos {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -320,8 +322,6 @@ main section header h2 {
 }
 
 #eventos article {
-  margin: 10px auto;
-
   display: grid;
   grid-template-columns: 0.25fr 0.75fr;
   grid-template-rows: 0.1fr 0.8fr 0.1fr;
@@ -512,11 +512,11 @@ select {
   display: inline-block;
 }
 
-#comentar article form> :nth-child(3) label {
+#comentar article form > :nth-child(3) label {
   width: 100%;
 }
 
-#comentar article form> :nth-child(3) {
+#comentar article form > :nth-child(3) {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -555,9 +555,7 @@ select {
 
 /* END FORM */
 
-
 /* END COMENTAR */
-
 
 /* END MAIN */
 
@@ -571,7 +569,7 @@ footer {
 }
 
 footer figure {
-  padding: 10px
+  padding: 10px;
 }
 
 footer figure:hover {
