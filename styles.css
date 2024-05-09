@@ -79,6 +79,7 @@ main {
 /** BANNER/HERO */
 main figure img {
   object-fit: contain;
+  width: 100%;
 }
 
 main section {
@@ -170,6 +171,7 @@ main section header h2 {
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+  padding-top: 6px;
 
   height: 100%;
   width: 100%;
@@ -473,7 +475,7 @@ main section header h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: fit-content;
+  max-width: 650px;
 }
 
 #comentar article form fieldset {
