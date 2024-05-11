@@ -137,11 +137,18 @@ main > section > header {
 #hero {
   min-width: 1200px;
   max-width: 100vw;
+
+  /* section hero toma todo el ancho, asi que se sacan margin y padding para esta. */
+  margin: 0;
+  padding: 0;
 }
 
-#hero > img {
-  object-fit: contain;
+#hero > figure {
+  width: 100%;
+}
 
+#hero > figure > img {
+  object-fit: contain;
   width: 100%;
 }
 /** END BANNER/HERO */
