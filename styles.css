@@ -393,7 +393,8 @@ main > section > header > h3 {
 #eventos > article > header {
   margin-bottom: 8px;
   margin-top: 8px;
-  margin-left: 20px;
+  padding-left: 30px;
+  padding-right: 4px;
 }
 
 #eventos > article > header > h3 {
@@ -405,13 +406,16 @@ main > section > header > h3 {
 
 #eventos > article > ul {
   margin-bottom: 8px;
-  margin-left: 30px;
-  margin-right: 10px;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #eventos > article > ul > li {
   padding-bottom: 4px;
   padding-top: 4px;
+  max-width: 100%;
+  text-align: left;
 }
 
 #eventos > article > footer {
