@@ -18,6 +18,18 @@ a {
   color: white;
 }
 
+h1 {
+  color: #ffcd00;
+  font-size: 4rem;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5ch;
+  background-color: rgba(215, 78, 24, 0.45);
+  border-radius: 2px;
+  padding: 2px;
+}
+
 h2 {
   color: #d7df17;
   font-size: 2.5rem;
@@ -141,16 +153,21 @@ main > section > header {
   /* section hero toma todo el ancho, asi que se sacan margin y padding para esta. */
   margin: 0;
   padding: 0;
+
+  display: grid;
 }
 
-#hero > figure {
-  width: 100%;
+#hero > figure,
+#hero > header {
+  grid-area: 1/1;
 }
 
-#hero > figure > img {
-  object-fit: contain;
-  width: 100%;
+#hero > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 /** END BANNER/HERO */
 
 #participantes {
