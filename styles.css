@@ -146,6 +146,10 @@ main > section > header {
 }
 /** END BANNER/HERO */
 
+#participantes {
+  background-color: rgb(113, 24, 215, 0.01);
+}
+
 #participantes > article {
   align-content: space-between;
 
@@ -279,6 +283,10 @@ main > section > header {
 
 /** START GALERIA */
 
+#galeria {
+  background-color: rgb(146, 100, 204, 0.02);
+}
+
 #galeria > article {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -336,10 +344,7 @@ main > section > header {
 
 /** START EVENTOS */
 #eventos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  background-color: rgb(219, 175, 224, 0.02);
 }
 
 #eventos > article {
@@ -448,11 +453,8 @@ main > section > header {
 /* START COMENTAR */
 
 #comentar {
+  background-color: rgba(255, 205, 0, 0.01);
   margin-top: 64px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 #comentar > article {
