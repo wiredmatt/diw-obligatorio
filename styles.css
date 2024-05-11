@@ -18,6 +18,12 @@ a {
   color: white;
 }
 
+main > section > header {
+  min-width: 0px;
+  padding: 0;
+  margin: 0;
+}
+
 article > header,
 article > ul,
 article > ul > li,
@@ -27,12 +33,6 @@ article > footer {
   height: fit-content;
   margin: 0;
   padding: 0;
-}
-
-main > section > header {
-  min-width: 0px;
-  padding: 0;
-  margin: 0;
 }
 
 /* END BASE */
@@ -120,12 +120,15 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   margin: auto auto;
+}
+
+h2,
+h3 {
   letter-spacing: 0.08ch;
 }
 
-main > section > article > header h3 {
+h3 {
   font-size: 2rem;
-  padding-bottom: 4px;
 }
 
 /* END MAIN */
