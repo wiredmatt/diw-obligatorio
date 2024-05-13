@@ -197,7 +197,7 @@ main > section > h2 {
   transition-duration: 500ms;
 }
 
-#participantes > article > header,
+#participantes > article > h3,
 #participantes > article > p {
   grid-column: 1;
   width: 100%;
@@ -207,7 +207,7 @@ main > section > h2 {
   padding: 12px;
 }
 
-#participantes > article > header {
+#participantes > article > h3 {
   padding-bottom: 0px;
 }
 
