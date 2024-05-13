@@ -625,7 +625,7 @@ main > section > header {
 /* END COMENTAR */
 
 /** START PAGE FOOTER */
-#page-footer {
+footer {
   min-width: 1200px;
   max-width: 1440px;
 
@@ -637,12 +637,12 @@ main > section > header {
   align-items: center;
 }
 
-#page-footer > a :hover {
+footer > a :hover {
   transform: scale(1.1, 1.1);
   transition-duration: 100ms;
 }
 
-#page-footer > a > figure {
+footer > a > figure {
   /* padding a la figura para que el anchor sea más fácil de clickear */
   padding: 10px;
 }
