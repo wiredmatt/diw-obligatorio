@@ -18,24 +18,18 @@ a {
   color: white;
 }
 
-h1 {
-  color: #ffcd00;
-  font-size: 4rem;
+h1,
+h2,
+h3,
+header > nav {
   font-family: "Anton", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.5ch;
-  border-radius: 2px;
-  padding: 2px;
+  min-width: 0px;
 }
 
+h1,
 h2 {
-  color: #d7df17;
-  font-size: 2.5rem;
-  font-family: "Anton", sans-serif;
-  text-transform: uppercase;
   text-align: center;
-  margin: auto auto;
+  text-transform: uppercase;
 }
 
 h2,
@@ -43,25 +37,30 @@ h3 {
   letter-spacing: 0.08ch;
 }
 
+h1 {
+  color: #ffcd00;
+  font-size: 4rem;
+  letter-spacing: 0.5ch;
+  padding: 2px;
+}
+
+h2 {
+  color: #d7df17;
+  font-size: 3rem;
+  margin: auto auto;
+}
+
 h3 {
   font-size: 2rem;
 }
 
-main > section > h2 {
-  min-width: 0px;
-  padding: 0;
-  margin: 0;
-}
-
-article > h2,
-article > ul,
-article > ul > li,
-article > p {
+main > section > article > h3,
+main > section > article > ul,
+main > section > article > ul > li,
+main > section > article > p {
   width: 100%;
   min-width: 0px;
   height: fit-content;
-  margin: 0;
-  padding: 0;
 }
 
 /* END BASE */
@@ -72,7 +71,6 @@ header {
   max-width: 1440px;
 
   padding: 30px 60px;
-
   margin: 0 auto;
 
   display: flex;
@@ -85,8 +83,8 @@ header > figure {
 
 header > nav {
   flex: 5;
-  font-family: "Anton", sans-serif;
   font-size: 1.25rem;
+  text-transform: uppercase;
 }
 
 header > nav > ul {
@@ -95,11 +93,6 @@ header > nav > ul {
   display: flex;
   justify-content: space-around;
   align-content: flex-end;
-}
-
-header > nav > ul > li {
-  text-transform: uppercase;
-  box-sizing: border-box;
 }
 
 header > nav > ul > li > a {
@@ -147,7 +140,7 @@ main > section > h2 {
 
 /** START BANNER/HERO */
 #hero {
-  min-width: fit-content;
+  min-width: 100%;
   /* section hero toma todo el ancho, asi que se saca padding para esta. */
   padding: 0;
 
@@ -180,12 +173,10 @@ main > section > h2 {
 #participantes > article {
   align-content: space-between;
 
-  box-sizing: border-box;
   display: grid;
   grid-template-columns: 0.725fr 0.275fr;
   grid-template-rows: 0.3fr 0.7fr;
   border: 4px solid #9264cc;
-  border-radius: 4px;
   width: 48%;
 
   background-color: black;
@@ -204,7 +195,6 @@ main > section > h2 {
   width: 100%;
   min-width: 0px;
   height: fit-content;
-  margin: 0;
   padding: 12px;
 }
 
@@ -231,7 +221,7 @@ main > section > h2 {
 #participantes > article > p:nth-of-type(2) > a {
   border: 3px solid;
   border-radius: 6px;
-  padding: 8px 12px 8px 12px;
+  padding: 8px 12px;
 }
 
 #participantes > article > aside {
@@ -393,7 +383,6 @@ main > section > h2 {
   width: 100%;
   min-width: 0px;
   height: fit-content;
-  margin: 0;
 }
 
 #eventos > article:hover {
@@ -424,8 +413,6 @@ main > section > h2 {
   padding-right: 4px;
 
   color: #ffcd00;
-  font-family: "Anton", sans-serif;
-  font-size: 1.75rem;
   text-transform: uppercase;
 }
 
@@ -446,7 +433,8 @@ main > section > h2 {
 #eventos > article > p {
   grid-row: 3;
 
-  padding: 10px;
+  padding: 12px;
+  padding-bottom: 14px;
   height: 100%;
 
   display: flex;
@@ -532,10 +520,9 @@ main > section > h2 {
 
 #comentar > article > form > fieldset {
   width: 45%;
-  box-sizing: border-box;
   text-align: left;
   border: none;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px;
 }
 
 #comentar > article > form > fieldset > label {
