@@ -25,7 +25,6 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.5ch;
-  background-color: rgba(215, 78, 24, 0.45);
   border-radius: 2px;
   padding: 2px;
 }
@@ -147,25 +146,28 @@ main > section > header {
 
 /** START BANNER/HERO */
 #hero {
-  min-width: 1200px;
-  max-width: 100vw;
-
-  /* section hero toma todo el ancho, asi que se sacan margin y padding para esta. */
-  margin: 0;
+  min-width: fit-content;
+  /* section hero toma todo el ancho, asi que se saca padding para esta. */
   padding: 0;
 
   display: grid;
 }
 
+/* ambos toman el mismo espacio en la grid, ya que h1 va centrado en la figure */
 #hero > figure,
-#hero > header {
+#hero > h1 {
   grid-area: 1/1;
 }
 
-#hero > header {
+#hero > h1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* centrado horizontal */
+  align-items: center; /* centrado vertical */
+}
+
+#hero > figure > img {
+  width: 100%; /* necesario especificar 100% para que no se pase del ancho del contenedor */
+  object-fit: cover;
 }
 
 /** END BANNER/HERO */
