@@ -47,13 +47,13 @@ h3 {
   font-size: 2rem;
 }
 
-main > section > header {
+main > section > h2 {
   min-width: 0px;
   padding: 0;
   margin: 0;
 }
 
-article > header,
+article > h2,
 article > ul,
 article > ul > li,
 article > p {
@@ -67,7 +67,7 @@ article > p {
 /* END BASE */
 
 /* START PAGE HEADER */
-#page-header {
+header {
   min-width: 1200px;
   max-width: 1440px;
 
@@ -79,17 +79,17 @@ article > p {
   flex-direction: row;
 }
 
-#page-header figure {
+header > figure {
   flex: 4;
 }
 
-#page-header nav {
+header > nav {
   flex: 5;
   font-family: "Anton", sans-serif;
   font-size: 1.2rem;
 }
 
-#page-header nav ul {
+header > nav > ul {
   height: 100%;
   list-style-type: none;
   display: flex;
@@ -97,7 +97,7 @@ article > p {
   align-content: flex-end;
 }
 
-#page-header nav ul li {
+header > nav > ul > li {
   text-transform: uppercase;
   box-sizing: border-box;
   display: flex;
@@ -105,11 +105,11 @@ article > p {
   justify-content: center;
 }
 
-#page-header nav ul li a {
+header > nav > ul > li > a {
   color: white;
 }
 
-#page-header nav ul li a:hover {
+header > nav > ul > li > a:hover {
   color: #d7df17;
 }
 
@@ -137,7 +137,7 @@ main > section {
   justify-content: space-between;
 }
 
-main > section > header {
+main > section > h2 {
   width: 100%;
   margin: 40px auto;
 }
